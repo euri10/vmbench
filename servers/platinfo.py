@@ -29,9 +29,9 @@ if __name__ == '__main__':
                 'functions are deprecated .*',
                 PendingDeprecationWarning,
             )
-            distname, distversion, distid = platform.dist('')
+            # distname, distversion, distid, _ = platform.linux_distribution()
 
-        distribution = '{} {}'.format(distname, distversion).strip()
+        distribution = '{} {}'.format('distname', 'distversion').strip()
 
     else:
         distribution = None

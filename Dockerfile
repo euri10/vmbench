@@ -1,9 +1,5 @@
-FROM ubuntu:18.04
+FROM debian:bullseye
 MAINTAINER elvis@magic.io
-
-RUN DEBIAN_FRONTEND=noninteractive \
-        apt-get update && apt-get install -y \
-            language-pack-en
 
 ENV LANG en_US.UTF-8
 ENV WORKON_HOME /usr/local/python-venvs
