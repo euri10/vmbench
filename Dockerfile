@@ -12,7 +12,7 @@ ENV GOPATH /usr/go/
 RUN DEBIAN_FRONTEND=noninteractive \
         apt-get update && apt-get install -y \
             autoconf automake libtool build-essential \
-            python3 python3-pip git nodejs golang gosu
+            python3 python3-pip git nodejs golang gosu wrk
 
 RUN pip3 install vex
 RUN vex --python=python3 -m bench pip install -U pip
